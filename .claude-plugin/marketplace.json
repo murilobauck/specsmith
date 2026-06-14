@@ -1,0 +1,14 @@
+{
+  "name": "specsmith",
+  "owner": {
+    "name": "murilobauck",
+    "url": "https://github.com/murilobauck"
+  },
+  "plugins": [
+    {
+      "name": "specsmith",
+      "source": "./",
+      "description": "A spec-driven development kit for Claude Code: the prompt-grill and dev-lifecycle skills plus a specs/ scaffold."
+    }
+  ]
+}
