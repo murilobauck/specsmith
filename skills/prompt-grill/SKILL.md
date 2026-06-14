@@ -25,7 +25,11 @@ Goal: turn vague requests into assertive specifications BEFORE writing any code.
 
 ## Required output
 
-At the end, generate `specs/<feature>/spec.md` from the template in `specs/_template/spec.md`:
+At the end, write `specs/<feature>/spec.md` in the user's project (create the
+directory if needed). Use the section structure below directly — do not depend
+on a template file existing in the project. If the project already has
+`specs/_template/spec.md` (e.g. after running `specsmith-init`), follow that
+template's structure instead.
 
 - Context and problem (2-3 sentences)
 - Verifiable acceptance criteria (checklist)
