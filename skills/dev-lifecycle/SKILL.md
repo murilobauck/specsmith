@@ -59,20 +59,23 @@ Before each checkpoint, the local gates must be green: lint, type-check, tests
 5. **Draft the PR (base: `develop`) and PAUSE.** Show title and description and
    wait for explicit approval before opening it.
    - Title: clear, objective, Conventional-Commits style.
-   - Description, exactly this template:
+   - Description: valid Markdown, exactly this template (no leading
+     indentation — the `##` headings must start at column 0):
 
+```markdown
 ## Summary
- What changed and why, briefly.
+What changed and why, briefly.
 
- ## Notable Decisions
- Key choices made, and meaningful alternatives rejected (with the reason).
- (Spec-driven? Pull these from spec.md "Decisions taken".)
+## Notable Decisions
+Key choices made, and meaningful alternatives rejected (with the reason).
+(Spec-driven? Pull these from spec.md "Decisions taken".)
 
- ## Test Plan
- How the change was verified / steps to reproduce the verification.
- (Spec-driven? Derive from the acceptance criteria checklist.)
+## Test Plan
+How the change was verified / steps to reproduce the verification.
+(Spec-driven? Derive from the acceptance criteria checklist.)
+```
 
- ## Guardrails
+## Guardrails
 
 - Never commit or push to `develop` or `main` directly.
 - Never auto-merge; never force-push a shared branch.
