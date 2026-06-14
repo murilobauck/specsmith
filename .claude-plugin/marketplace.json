@@ -2,13 +2,20 @@
   "name": "specsmith",
   "owner": {
     "name": "murilobauck",
-    "url": "https://github.com/murilobauck"
+    "url": "https://www.linkedin.com/in/murilobauck/"
   },
   "plugins": [
     {
       "name": "specsmith",
       "source": "./",
-      "description": "A spec-driven development kit for Claude Code: the prompt-grill and dev-lifecycle skills plus a specs/ scaffold."
+      "description": "A spec-driven development kit for Claude Code: the prompt-grill and dev-lifecycle skills plus a specs/ scaffold.",
+      "author": {
+        "name": "murilobauck",
+        "url": "https://www.linkedin.com/in/murilobauck/"
+      },
+      "repository": "https://github.com/murilobauck/specsmith",
+      "license": "MIT",
+      "keywords": ["spec-driven", "workflow", "git", "conventional-commits", "skills"]
     }
   ]
 }
