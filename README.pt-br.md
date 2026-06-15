@@ -85,11 +85,6 @@ parametrização automática na v1.
 entrega o método (as duas skills core + o scaffold) pra ser validado e refinado
 no uso real antes de crescer. Espere que a superfície evolua conforme o feedback.
 
-No roadmap:
-
-- **Suporte ao Antigravity** — um release futuro vai disponibilizar o Specsmith
-  também pro Antigravity, não só pro Claude Code.
-
 ## Licença
 
 [MIT](./LICENSE)
