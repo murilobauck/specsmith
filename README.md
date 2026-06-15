@@ -31,7 +31,7 @@ previous one is approved.
 |---|---|
 | `prompt-grill` | Interrogates a vague request one question at a time until it can be written as an assertive spec, then generates `specs/<feature>/spec.md`. |
 | `dev-lifecycle` | The single source of git mechanics: branch off `develop`, Conventional Commits, one commit per task, green gates, and a PR that pauses for your approval. |
-| `specsmith-init` | Copies the `specs/` scaffold (README + blank templates) into your project so the spec-driven flow has a local home. Optional — `prompt-grill` works without it. |
+| `specsmith-init` | Copies the `specs/` scaffold (README + validated templates for spec, plan, and tasks) into your project so the spec-driven flow has a local home. Optional — `prompt-grill` works without it. |
 
 ## Installation
 
@@ -56,9 +56,10 @@ and your whole team sees the method:
 /specsmith-init
 ```
 
-This copies `specs/README.md` and `specs/_template/` into your project root
-without overwriting anything that already exists. You can also copy the `specs/`
-folder from this repo manually if you prefer.
+This copies `specs/README.md` and `specs/_template/` (with validated templates
+for `spec.md`, `plan.md`, and `tasks.md`) into your project root without
+overwriting anything that already exists. You can also copy the `specs/` folder
+from this repo manually if you prefer.
 
 ## Quick start
 

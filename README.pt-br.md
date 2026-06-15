@@ -32,7 +32,7 @@ aprovada.
 |---|---|
 | `prompt-grill` | Interroga um pedido vago uma pergunta por vez até poder ser escrito como uma spec assertiva, e então gera `specs/<feature>/spec.md`. |
 | `dev-lifecycle` | A fonte única da mecânica git: branch a partir de `develop`, Conventional Commits, um commit por task, gates verdes, e um PR que pausa pra sua aprovação. |
-| `specsmith-init` | Copia o scaffold `specs/` (README + templates em branco) pro seu projeto, pra que o fluxo spec-driven tenha uma casa local. Opcional — a `prompt-grill` funciona sem ele. |
+| `specsmith-init` | Copia o scaffold `specs/` (README + templates validados de spec, plan e tasks) pro seu projeto, pra que o fluxo spec-driven tenha uma casa local. Opcional — a `prompt-grill` funciona sem ele. |
 
 ## Instalação
 
@@ -57,9 +57,10 @@ repo e o time inteiro veja o método:
 /specsmith-init
 ```
 
-Isso copia `specs/README.md` e `specs/_template/` pra raiz do seu projeto, sem
-sobrescrever nada que já exista. Você também pode copiar a pasta `specs/` deste
-repo manualmente, se preferir.
+Isso copia `specs/README.md` e `specs/_template/` (com templates validados de
+`spec.md`, `plan.md` e `tasks.md`) pra raiz do seu projeto, sem sobrescrever
+nada que já exista. Você também pode copiar a pasta `specs/` deste repo
+manualmente, se preferir.
 
 ## Começando
 

@@ -7,7 +7,7 @@ description: Scaffolds the Specsmith specs/ structure into the current project â
 
 Goal: drop the Specsmith `specs/` scaffold into the user's project so the
 spec-driven flow has a local home (a README explaining the cycle and a
-`_template/` with blank `spec.md`, `plan.md`, `tasks.md`).
+`_template/` with validated `spec.md`, `plan.md`, `tasks.md` templates).
 
 ## What to do
 
