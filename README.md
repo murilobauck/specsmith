@@ -85,11 +85,6 @@ the method (the two core skills + the scaffold) so it can be validated and
 refined in real use before growing. Expect the surface to evolve based on
 feedback.
 
-On the roadmap:
-
-- **Antigravity support** — a future release will make Specsmith available for
-  Antigravity as well, not just Claude Code.
-
 ## License
 
 [MIT](./LICENSE)
