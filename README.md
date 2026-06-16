@@ -35,35 +35,53 @@ previous one is approved.
 
 ## Installation
 
-In Claude Code:
+**IDEs** (Antigravity, Cursor, Vscode, etc.) — see below ↓
 
-```
+**Claude Code** — via plugin marketplace:
+
+```text
 /plugin marketplace add murilobauck/specsmith
 /plugin install specsmith@specsmith
 ```
 
 After install, the skills are available globally in any project — no
-per-project copying or generation step.
+per-project copying or generation step. To also scaffold the `specs/` folder
+into your project, run `/specsmith-init`.
 
-## Recommended: scaffold the specs/ folder
+### Installing in IDEs
 
-Specsmith works out of the box (`prompt-grill` carries the spec structure
-itself). For the best results, though, drop the `specs/` scaffold into your
-project so the README and the `plan.md` / `tasks.md` templates live in your repo
-and your whole team sees the method:
+Paste the prompt below into your agent. It will fetch both skills from GitHub,
+write them into `.specsmith/` in your project, and scaffold the `specs/`
+folder — no manual steps needed.
 
+```text
+Install Specsmith in this project by following these steps:
+
+1. Fetch https://raw.githubusercontent.com/murilobauck/specsmith/main/skills/dev-lifecycle/SKILL.md
+   and write the content to .specsmith/dev-lifecycle.md in the current project root.
+
+2. Fetch https://raw.githubusercontent.com/murilobauck/specsmith/main/skills/prompt-grill/SKILL.md
+   and write the content to .specsmith/prompt-grill.md in the current project root.
+
+3. Fetch https://raw.githubusercontent.com/murilobauck/specsmith/main/specs/README.md
+   and write it to specs/README.md (skip if the file already exists).
+
+4. Fetch https://raw.githubusercontent.com/murilobauck/specsmith/main/specs/_template/spec.md
+   and write it to specs/_template/spec.md (skip if exists).
+
+5. Fetch https://raw.githubusercontent.com/murilobauck/specsmith/main/specs/_template/plan.md
+   and write it to specs/_template/plan.md (skip if exists).
+
+6. Fetch https://raw.githubusercontent.com/murilobauck/specsmith/main/specs/_template/tasks.md
+   and write it to specs/_template/tasks.md (skip if exists).
+
+After completing all steps, read .specsmith/prompt-grill.md and .specsmith/dev-lifecycle.md
+so you are ready to use them. Confirm which files were created.
 ```
-/specsmith-init
-```
-
-This copies `specs/README.md` and `specs/_template/` (with validated templates
-for `spec.md`, `plan.md`, and `tasks.md`) into your project root without
-overwriting anything that already exists. You can also copy the `specs/` folder
-from this repo manually if you prefer.
 
 ## Quick start
 
-1. (Optional but recommended) Run `/specsmith-init` to scaffold `specs/`.
+1. (Optional but recommended) Run `/specsmith-init` to scaffold `specs/` (Claude Code only).
 2. Run `prompt-grill` (or just say "interview me about X"). It conducts the
    interview and writes `specs/<feature>/spec.md`.
 3. With the spec approved, write `plan.md` (copy from `specs/_template/plan.md`).
