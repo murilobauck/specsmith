@@ -2,18 +2,18 @@
 
 > 🇺🇸 [English version](./README.md)
 
-**Um kit de desenvolvimento spec-driven para o Claude Code e IDEs com IA.**
+**Um kit de desenvolvimento spec-driven para o [Claude Code](https://code.claude.com).**
 
 Ferramentas de IA pra código dão resultados inconsistentes quando você as conduz
 de forma ad hoc. O Specsmith empacota um método que funciona na prática:
 interrogar o pedido até ele ficar inequívoco, escrever um `spec.md`, depois
 `plan.md`, depois `tasks.md`, e então executar com higiene de git disciplinada.
-Ele vem como um plugin do Claude Code e skills compatíveis com IDEs — duas skills
-mais um scaffold `specs/` que amarra tudo.
+Ele vem como um plugin instalável do Claude Code — duas skills mais um scaffold
+`specs/` que amarra tudo.
 
 ## Para quem é
 
-Devs já confortáveis com o Claude Code ou agentes de IA em IDEs (como Antigravity, Cursor, Copilot Workspace) que querem um caminho comprovado de um
+Devs já confortáveis com o Claude Code que querem um caminho comprovado de um
 pedido vago até código entregue e revisado, sem perder o rigor no caminho.
 
 ## O método
