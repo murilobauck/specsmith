@@ -1,8 +1,3 @@
-<!--
-Thanks for contributing! Please fill out the sections below.
-Keep the title short and descriptive.
--->
-
 ## Description
 
 What does this PR change and why?
