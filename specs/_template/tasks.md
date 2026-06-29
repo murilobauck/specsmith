@@ -10,6 +10,9 @@ Rules:
 - Each task ≤ ~1h, ordered by dependency.
 - Each task has a **verifiable** done criterion ("test X passes", not "improve Y").
 - Before marking `[x]`: run the repo's gates — **lint, type-check, and tests** — all green.
+- Before marking `[x]`: self-check the code against the coding principles in the
+  `dev-lifecycle` checkpoint phase (**KISS, YAGNI, DRY, SoC**) and refactor if violated —
+  autonomously, no user prompt.
 - When marking `[x]`: make the **conventional commit** (in English) for the task —
   the *checkpoint* phase of the `dev-lifecycle` skill. **1 task = 1 commit.** Never accumulate.
 

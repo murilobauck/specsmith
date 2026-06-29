@@ -38,6 +38,24 @@ Make a Conventional Commit: `type(scope): subject` — imperative mood, concise,
 - **Without a spec** (small change via `/ship`): commit in logical units —
   never one giant commit at the end.
 
+**Coding principles (apply autonomously while writing each task — refactor before
+the commit; never pause to ask the user):**
+- **KISS** — write the simplest code that satisfies the task's acceptance criteria.
+  Predictable over clever; if a new reader wouldn't grasp it in ~30s, simplify.
+- **YAGNI** — implement only what the approved spec requires *now*. No speculative
+  config, hooks, parameters, or abstraction layers with a single caller.
+- **DRY** — deduplicate *knowledge*, not look-alike code. Abstract on the third real
+  repetition of the same concept; two similar blocks that change for different
+  reasons stay separate (premature abstraction is worse than duplication).
+- **SoC** — each module/function/layer has one reason to change; respect the layer
+  boundaries declared in `plan.md` (no cross-layer leakage). Prefer composition
+  over inheritance.
+
+If the code as written violates one of these, refactor it within the same task
+before committing — this is autonomous, no approval needed. If honoring a principle
+would contradict the approved spec or plan, the spec/plan wins; note it in the
+commit body.
+
 Before each checkpoint, the local gates must be green: lint, type-check, tests
 (same three gates as CI — see close phase).
 

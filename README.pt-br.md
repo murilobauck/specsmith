@@ -24,14 +24,16 @@ kickoff (branch)  →  código (1 commit por task)  →  close (testes/CI → pu
 ```
 
 Nunca pule direto pra implementação. Cada etapa só avança quando a anterior está
-aprovada.
+aprovada. Quando estão, o agente coda de forma **autônoma** — aplicando **KISS,
+YAGNI, DRY e SoC** ao código que escreve e refatorando qualquer violação antes de
+cada commit, sem parar pra perguntar.
 
 ## O que vem na caixa
 
 | Skill | O que faz |
 |---|---|
 | `prompt-grill` | Interroga um pedido vago uma pergunta por vez até poder ser escrito como uma spec assertiva, e então gera `specs/<feature>/spec.md`. |
-| `dev-lifecycle` | A fonte única da mecânica git: branch a partir de `develop`, Conventional Commits, um commit por task, gates verdes, e um PR que pausa pra sua aprovação. |
+| `dev-lifecycle` | A fonte única da mecânica git: branch a partir de `develop`, Conventional Commits, um commit por task, gates verdes, e um PR que pausa pra sua aprovação. Também carrega os princípios de código (KISS, YAGNI, DRY, SoC) que o agente auto-aplica ao escrever cada task. |
 | `specsmith-init` | Copia o scaffold `specs/` (README + templates validados de spec, plan e tasks) pro seu projeto, pra que o fluxo spec-driven tenha uma casa local. Opcional — a `prompt-grill` funciona sem ele. |
 
 ## Instalação

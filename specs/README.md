@@ -13,6 +13,10 @@ kickoff (branch)  →  code (1 commit per task)  →  close (tests/CI → push �
 Never jump straight to implementation. Each stage advances only once the previous one is
 approved. The git mechanics of kickoff / checkpoint / close live in the `dev-lifecycle` skill.
 
+Once the specs are approved, the agent codes **autonomously** — it applies **KISS, YAGNI,
+DRY, and SoC** to the code it writes and refactors any violation before each commit, without
+pausing to ask. The source of these directives is the `dev-lifecycle` checkpoint phase.
+
 ## The three artifacts
 
 | File | What it is | Who generates it |
