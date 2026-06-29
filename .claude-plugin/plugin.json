@@ -1,7 +1,7 @@
 {
   "name": "specsmith",
   "displayName": "Specsmith",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A spec-driven development kit for Claude Code: the prompt-grill and dev-lifecycle skills plus a specs/ scaffold that takes you from a vague request to shipped, reviewed code.",
   "author": {
     "name": "murilobauck",
