@@ -11,6 +11,12 @@
 
 ## Technical approach
 
+> Design it simply: pick the simplest approach that meets the acceptance criteria
+> (KISS) and add no abstraction, layer, or dependency without a real use in *this*
+> spec (YAGNI). The "Affected files by layer" table below is where SoC lives — each
+> change carries a single responsibility. The agent enforces these autonomously
+> while coding (see the `dev-lifecycle` checkpoint phase).
+
 <2-4 sentences: the high-level implementation strategy.>
 
 ## Affected files (by layer)
